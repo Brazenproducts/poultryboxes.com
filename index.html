@@ -6,7 +6,7 @@
 <title>Plastic Poultry Boxes | Commercial Processing & Cold Chain | PoultryBoxes.com</title>
 <meta name="description" content="Food-grade plastic poultry boxes for commercial processing lines and cold chain distribution. Steam-clean safe, blast-freeze rated, custom print. Elipacko direct.">
 <meta property="og:title" content="Plastic Poultry Boxes — Commercial Grade Food Processing">
-<meta property="og:description" content="PP poultry boxes for processing plants and cold chain. No bacterial harborage, pressure-wash safe, custom colour coding. From Elipacko.">
+<meta property="og:description" content="PP poultry boxes for processing plants and cold chain. No bacterial harborage, pressure-wash safe, custom color coding. From Elipacko.">
 <meta property="og:url" content="https://poultryboxes.com">
 <meta property="og:type" content="website">
 <link rel="canonical" href="https://poultryboxes.com">
@@ -54,7 +54,82 @@ header a{background:#f0a020;color:#0c0c10;padding:9px 18px;text-decoration:none;
 footer{background:#060608;color:#3a3a44;text-align:center;padding:20px;font-family:'Segoe UI',sans-serif;font-size:0.78rem}
 footer a{color:#5a5a68;text-decoration:none}
 @media(max-width:720px){.hero h1{font-size:2rem}.photo-banner,.alternating .alt-row{grid-template-columns:1fr}.alt-row.flip img,.alt-row.flip .alt-text{order:unset}}
-</style>
+
+  .photo-strip{display:grid;grid-template-columns:1fr 1fr 1fr;gap:4px;margin:0;max-height:320px;overflow:hidden}
+  .photo-strip img{width:100%;height:280px;object-fit:cover;display:block}
+  @media(max-width:640px){.photo-strip{grid-template-columns:1fr;max-height:none}.photo-strip img{height:200px}}
+
+  
+    /* ===== MOBILE NAV ===== */
+    html, body { overflow-x: hidden; max-width: 100%; }
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 8px;
+      background: none;
+      border: none;
+      margin-left: auto;
+      flex-shrink: 0;
+    }
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: currentColor;
+      border-radius: 2px;
+      transition: 0.2s;
+    }
+    .mobile-menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: inherit;
+      border-top: 1px solid rgba(0,0,0,0.1);
+      padding: 12px 0;
+      z-index: 999;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a {
+      padding: 12px 24px;
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      display: block;
+    }
+    @media (max-width: 768px) {
+      nav, header {
+        position: relative;
+        display: flex !important;
+        align-items: center !important;
+        padding: 0 16px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+        min-height: 52px !important;
+      }
+      /* hide desktop nav links / items */
+      .nav-links, .nav-items, .nav-menu, .nav-right { display: none !important; }
+      /* show hamburger */
+      .hamburger { display: flex !important; }
+      /* fix any overflow-causing elements */
+      nav > *, header > * { flex-shrink: 1; min-width: 0; }
+      /* logo stays visible */
+      .nav-logo, .nav-brand, .logo, .brand,
+      nav h1, header h1, header > div:first-child {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 75vw;
+        font-size: 1rem !important;
+      }
+    }
+
+  </style>
 </head>
 <body>
 <header>
@@ -63,42 +138,51 @@ footer a{color:#5a5a68;text-decoration:none}
 </header>
 
 <section class="hero">
-  <div class="hero-eyebrow">Commercial Poultry Processing</div>
+  <div class="hero-eyebrow">Commercial Poultry Processing
+<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-top:16px">
+<img src="https://brazenproducts.github.io/elipacko-assets/poultry-crate.jpg" alt="PP corrugated poultry shipping crate — Elipacko USA" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:contain;background:#f7f9fc;border-radius:10px;border:1px solid #e2e8f0;padding:8px;margin:4px 0">
+<img src="https://brazenproducts.github.io/elipacko-assets/84.jpg" alt="PP corrugated poultry box stack — Elipacko USA" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:contain;background:#f7f9fc;border-radius:10px;border:1px solid #e2e8f0;padding:8px;margin:4px 0">
+<img src="https://brazenproducts.github.io/elipacko-assets/85.jpg" alt="PP corrugated poultry boxes wholesale — Elipacko USA" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:contain;background:#f7f9fc;border-radius:10px;border:1px solid #e2e8f0;padding:8px;margin:4px 0">
+</div>
+</div>
   <h1>Plastic Poultry Boxes for<br><strong>Cleaner Processing,<br>Safer Product</strong></h1>
-  <p>Food-grade PP poultry boxes engineered for the demands of commercial processing lines. Steam-clean safe, colour-coded for HACCP zones, blast-freeze rated.</p>
+  <p>Food-grade PP poultry boxes engineered for the demands of commercial processing lines. Steam-clean safe, color-coded for HACCP zones, blast-freeze rated.</p>
   <a href="https://elipacko.com">Request Specifications →</a>
 </section>
 
-<div class="photo-banner">
-  <img src="https://brazenproducts.github.io/elipacko-assets/tuna-box.jpg" alt="Plastic poultry processing box">
-  <img src="https://brazenproducts.github.io/elipacko-assets/17.jpg" alt="Commercial poultry plastic container">
-  <img src="https://brazenproducts.github.io/elipacko-assets/15.jpg" alt="Food grade PP poultry box">
+<div class="photo-strip">
+  <img src="https://brazenproducts.github.io/elipacko-assets/poultry-box.jpg" alt="Plastic poultry processing boxes" loading="lazy">
+  <img src="https://brazenproducts.github.io/elipacko-assets/cold-chain.jpg" alt="Cold chain poultry containers" loading="lazy">
+  <img src="https://brazenproducts.github.io/elipacko-assets/plastic-bins.jpg" alt="Food-grade PP plastic boxes" loading="lazy">
 </div>
+
+
+
 
 <div class="alternating">
   <div class="alt-row">
-    <img src="https://brazenproducts.github.io/elipacko-assets/squid-box.jpg" alt="Seafood poultry plastic box">
+    
     <div class="alt-text">
       <h2>No Bacterial Harborage. Period.</h2>
-      <p>The number one complaint from food safety auditors about traditional wood or wire poultry crates is surface condition — splinters, cracks, and wire deformation all create sites where Salmonella and Campylobacter survive between sanitisation cycles.</p>
-      <p>Elipacko's plastic poultry boxes are injection-moulded with smooth, draft-angled interior walls and fully radiused internal corners. There are no flat-to-flat joints, no internal fasteners, and no surface features that trap product or residual moisture.</p>
+      <p>The number one complaint from food safety auditors about traditional wood or wire poultry crates is surface condition — splinters, cracks, and wire deformation all create sites where Salmonella and Campylobacter survive between sanitization cycles.</p>
+      <p>Elipacko's plastic poultry boxes are injection-molded with smooth, draft-angled interior walls and fully radiused internal corners. There are no flat-to-flat joints, no internal fasteners, and no surface features that trap product or residual moisture.</p>
       <div class="pts">
-        <div class="pt">Smooth moulded PP — no cracks or splinters</div>
+        <div class="pt">Smooth molded PP — no cracks or splinters</div>
         <div class="pt">Fully radiused internal corners — no residue traps</div>
         <div class="pt">Rated for high-pressure hot water (HPW) cleaning</div>
-        <div class="pt">Compatible with chlorine and peroxyacetic acid sanitisers</div>
-        <div class="pt">Colour survives 500+ cleaning cycles</div>
+        <div class="pt">Compatible with chlorine and peroxyacetic acid sanitizers</div>
+        <div class="pt">color survives 500+ cleaning cycles</div>
       </div>
     </div>
   </div>
   <div class="alt-row flip">
-    <img src="https://brazenproducts.github.io/elipacko-assets/17.jpg" alt="Custom branded poultry box">
+    
     <div class="alt-text">
       <h2>Custom Print for Brand and Compliance</h2>
       <p>Processing facilities operating under retailer codes of practice or export market specifications often need product identification on every container. Elipacko prints directly onto the PP surface at the factory — species, weight range, facility code, and handling temperature — in permanent, wash-resistant print that survives the cleaning cycle.</p>
       <p>For export market compliance, all required labelling information can be applied at the factory, eliminating the stick-on label failure point that causes rejected shipments at border inspection.</p>
       <div class="pts">
-        <div class="pt">Up to 4-colour factory flexographic print</div>
+        <div class="pt">Up to 4-color factory flexographic print</div>
         <div class="pt">Species, weight, temperature, and facility markings</div>
         <div class="pt">Print survives repeated HPW and chemical cleaning</div>
         <div class="pt">Bar codes and QR codes print with scanner-readable accuracy</div>
@@ -110,7 +194,7 @@ footer a{color:#5a5a68;text-decoration:none}
 <div class="cert-section">
   <div class="cert"><div class="num">−30°C</div><div class="lbl">Blast Freeze Rated</div></div>
   <div class="cert"><div class="num">NSF</div><div class="lbl">Food Contact Listed</div></div>
-  <div class="cert"><div class="num">HACCP</div><div class="lbl">Colour-Code Ready</div></div>
+  <div class="cert"><div class="num">HACCP</div><div class="lbl">color-Code Ready</div></div>
   <div class="cert"><div class="num">100+</div><div class="lbl">Cleaning Cycles</div></div>
   <div class="cert"><div class="num">4-Way</div><div class="lbl">Forklift Entry</div></div>
 </div>
@@ -123,20 +207,38 @@ footer a{color:#5a5a68;text-decoration:none}
   <p>If your facility handles both whole birds and portioned product, consider specifying boxes that can be used at both stages — a medium-depth box that accommodates whole small birds and stacks efficiently when holding portioned cuts reduces the number of container SKUs you need to manage.</p>
 
   <h3>Live vs Processed Product</h3>
-  <p>Ventilated poultry boxes (with perforated or slatted walls) are required for live bird transport to maintain airflow and meet animal welfare regulations. Processed product boxes use solid or minimal-perforation walls for hygiene and temperature retention. Do not use live bird transport crates for processed product — the perforation pattern creates cleaning difficulty and the surface finish is not optimised for food contact hygiene.</p>
+  <p>Ventilated poultry boxes (with perforated or slatted walls) are required for live bird transport to maintain airflow and meet animal welfare regulations. Processed product boxes use solid or minimal-perforation walls for hygiene and temperature retention. Do not use live bird transport crates for processed product — the perforation pattern creates cleaning difficulty and the surface finish is not optimized for food contact hygiene.</p>
 
-  <h3>Palletising and Cold Store Racking</h3>
+  <h3>Palletizing and Cold Store Racking</h3>
   <p>For cold store rack systems, confirm the beam span and load-per-beam with Elipacko before ordering. Poultry box designs intended for floor-stacking may not have the base runner structure needed to span racking beams under load. The right base specification will be confirmed at the quoting stage. Contact <a href="https://elipacko.com" style="color:#f0a020">Elipacko</a> for technical specifications and current lead times.</p>
 </div>
 
 <div class="cta-bottom">
   <h2>Upgrade Your Processing Line with Plastic Poultry Boxes</h2>
-  <p>Food-grade, custom colour, blast-freeze rated. Direct from Elipacko manufacturer.</p>
+  <p>Food-grade, custom color, blast-freeze rated. Direct from Elipacko manufacturer.</p>
   <a href="https://elipacko.com">Contact Elipacko for a Quote →</a>
 </div>
 
 <footer>
   <p>PoultryBoxes.com — plastic poultry box resource. Manufacturer: <a href="https://elipacko.com">Elipacko</a></p>
 </footer>
+
+<script>
+(function(){
+  var btn = document.querySelector('.hamburger');
+  var menu = document.querySelector('.mobile-menu');
+  if(btn && menu){
+    btn.addEventListener('click', function(){
+      menu.classList.toggle('open');
+    });
+    document.addEventListener('click', function(e){
+      if(!btn.contains(e.target) && !menu.contains(e.target)){
+        menu.classList.remove('open');
+      }
+    });
+  }
+})();
+</script>
+
 </body>
 </html>
